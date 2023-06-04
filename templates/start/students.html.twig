@@ -1,0 +1,12 @@
+{# templates/students.html.twig #}
+
+<h1>List of Students</h1>
+
+<ul>
+    {% for student in students %}
+        <li>
+            {{ student.voornaam }} {{ student.achternaam }}
+            <img src="{{ student.image.path }}" alt="{{ student.image.filename }}" width="100">
+        </li>
+    {% endfor %}
+</ul>
